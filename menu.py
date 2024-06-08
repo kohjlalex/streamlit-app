@@ -1,5 +1,4 @@
 import streamlit as st
-import streamlit.componentsv1 as components
 
 def menu(show_select_msg=False):
     with st.sidebar:
