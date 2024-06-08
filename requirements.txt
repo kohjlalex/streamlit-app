@@ -1,13 +1,12 @@
-beautifulsoup4==4.12.3
 numpy==1.26.4
 pandas==2.2.2
 pdfplumber==0.9.0
 pytz==2024.1
-requests==2.32.2  # lowercase 'r'
+requests==2.32.2 
 selenium==4.21.0
-streamlit==1.23.1  # Latest stable version as of now
-yfinance==0.2.18  # Example version, ensure it's the latest
-yahoofinancials==1.14  # Example version, ensure it's the latest
-matplotlib==3.7.1  # Example version, ensure it's the latest
-pendulum==2.1.2  # Example version, ensure it's the latest
-mplfinance==0.12.9  # Example version, ensure it's the latest
+streamlit==1.23.1 
+yfinance==0.2.18  
+yahoofinancials==1.14 
+matplotlib==3.7.1  
+pendulum==2.1.2  
+mplfinance==0.12.9  
