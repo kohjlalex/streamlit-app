@@ -2,7 +2,7 @@ import os
 from menu import menu
 
 import streamlit as st
-import streamlit.componentsv1 as components
+import streamlit.components.v1 as components
 
 def main():
 
