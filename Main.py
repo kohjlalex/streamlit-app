@@ -1,5 +1,5 @@
 import streamlit as st
-import menu
+from menu import menu
 
 def main():
 
