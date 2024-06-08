@@ -71,3 +71,7 @@ def process_api_request(api_key, ticker):
       elif "CASH_FLOW" in url:
           data_cash_flow = json_data
     return (data_income_statement, data_balance_sheet, data_cash_flow)
+
+if __name__ == "__main__":
+    user_input()
+    
