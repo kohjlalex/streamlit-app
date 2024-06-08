@@ -77,5 +77,5 @@ def process_api_request(api_key, ticker):
 
 if __name__ == "__main__":
     user_input()
-    data_income_statement, data_balance_sheet, data_cash_flow = pull_api(ticker)
+    data_income_statement, data_balance_sheet, data_cash_flow = process_api_request(ticker)
     
