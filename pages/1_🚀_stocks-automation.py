@@ -8,6 +8,7 @@ import numpy as np
 import json
 import requests
 from bs4 import BeautifulSoup
+import streamlit
 
 # Function to create the form
 def user_input():
