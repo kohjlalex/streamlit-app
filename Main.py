@@ -1,5 +1,5 @@
 import os
-from menu import menu
+#from menu import menu
 
 import streamlit as st
 import streamlit.components.v1 as components
@@ -33,5 +33,5 @@ def main():
 
 #run main function
 if __name__ == "__main__":
-    menu(show_select_msg=True)
+    #menu(show_select_msg=True)
     main()       
