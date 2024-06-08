@@ -30,9 +30,9 @@ def user_input():
 
     return api_key, ticker
 
-if 'api_key' in st.session_state and 'ticker' in st.session_state:
-    api_key = st.session_state.api_key
-    ticker = st.session_state.ticker
+# if 'api_key' in st.session_state and 'ticker' in st.session_state:
+#     api_key = st.session_state.api_key
+#     ticker = st.session_state.ticker
     
 file_paths = ['income_statement.json', 'balance_sheet.json', 'cash_flow.json']
 
@@ -76,6 +76,6 @@ def process_api_request(api_key, ticker):
     return (data_income_statement, data_balance_sheet, data_cash_flow)
 
 if __name__ == "__main__":
-    user_input()
+    api_key, ticker = user_input()
     data_income_statement, data_balance_sheet, data_cash_flow = process_api_request(ticker)
     
