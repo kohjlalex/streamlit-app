@@ -25,6 +25,7 @@ def main():
     #         Dataset](https://github.com/streamlit/demo-self-driving)
     #     - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
     """
+    )
 
 #run main function
 if __name__ == "__main__":
