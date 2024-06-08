@@ -75,7 +75,39 @@ def process_api_request(api_key, ticker):
           data_cash_flow = json_data
     return (data_income_statement, data_balance_sheet, data_cash_flow)
 
-if __name__ == "__main__":
+def main():
+    # Call the user input function
     api_key, ticker = user_input()
-    data_income_statement, data_balance_sheet, data_cash_flow = process_api_request(ticker)
-    
+
+    # Add a separator
+    st.write("---")
+
+    # Check if the necessary values are provided
+    if api_key and ticker:
+        # Add a button to trigger fetching financial statements
+        if st.button("Fetch Financial Statements"):
+            data_income_statement, data_balance_sheet, data_cash_flow = process_api_request(api_key, ticker)
+            
+            if data_income_statement:
+                st.write("Income Statement:")
+                st.json(data_income_statement)
+            else:
+                st.error("Failed to fetch Income Statement data.")
+            
+            if data_balance_sheet:
+                st.write("Balance Sheet:")
+                st.json(data_balance_sheet)
+            else:
+                st.error("Failed to fetch Balance Sheet data.")
+            
+            if data_cash_flow:
+                st.write("Cash Flow Statement:")
+                st.json(data_cash_flow)
+            else:
+                st.error("Failed to fetch Cash Flow Statement data.")
+    else:
+        st.info("Please enter the API key and stock ticker above.")
+
+# Entry point of the application
+if __name__ == "__main__":
+    main()
