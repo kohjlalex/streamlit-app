@@ -30,9 +30,9 @@ def user_input():
 
     return api_key, ticker
 
-if 'api_key' in st.session_state and 'stock_ticker' in st.session_state:
+if 'api_key' in st.session_state and 'ticker' in st.session_state:
     api_key = st.session_state.api_key
-    stock_ticker = st.session_state.stock_ticker
+    ticker = st.session_state.ticker
     
 file_paths = ['income_statement.json', 'balance_sheet.json', 'cash_flow.json']
 
