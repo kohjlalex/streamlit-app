@@ -28,13 +28,15 @@ def user_input():
         else:
             st.write("Please fill in both fields.")
 
+    return api_key, ticker
+
+if 'api_key' in st.session_state and 'stock_ticker' in st.session_state:
+    api_key = st.session_state.api_key
+    stock_ticker = st.session_state.stock_ticker
+    
 file_paths = ['income_statement.json', 'balance_sheet.json', 'cash_flow.json']
 
 def process_api_request(api_key, ticker):
-    if 'api_key' in st.session_state and 'stock_ticker' in st.session_state:
-        api_key = st.session_state.api_key
-        stock_ticker = st.session_state.stock_ticker
-    
     #Income Statement
     financial_statement = "INCOME_STATEMENT"
     url_income_statement = "https://www.alphavantage.co/query?function="+ financial_statement + "&symbol="+ ticker + "&apikey="+ alpha_vantage_api_key
@@ -75,4 +77,5 @@ def process_api_request(api_key, ticker):
 
 if __name__ == "__main__":
     user_input()
+    data_income_statement, data_balance_sheet, data_cash_flow = pull_api(ticker)
     
