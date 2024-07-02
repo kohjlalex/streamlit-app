@@ -8,10 +8,10 @@ selenium==4.21.0
 #streamlit==1.35.0
 yfinance
 yahoofinancials
-matplotlib 
-pendulum
-mplfinance
-re
-ast
-datetime
+#matplotlib 
+#pendulum
+#mplfinance
+#re
+#ast
+#datetime
 #_strptime
