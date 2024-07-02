@@ -11,3 +11,7 @@ yahoofinancials
 matplotlib 
 pendulum
 mplfinance
+re
+ast
+datetime
+_strptime
