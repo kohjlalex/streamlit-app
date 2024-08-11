@@ -10,6 +10,6 @@ yfinance
 
 #beautifulsoup4==4.12.3
 #selenium==4.21.0
-matplotlib==3.7.1
-pendulum==3.1.0
-mplfinance==0.12.10
+matplotlib
+pendulum=
+mplfinance
