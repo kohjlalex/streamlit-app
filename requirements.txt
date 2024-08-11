@@ -7,9 +7,9 @@ yahoofinancials==1.11.0
 requests==2.32.2
 streamlit==1.35.0
 yfinance
-
-#beautifulsoup4==4.12.3
-#selenium==4.21.0
 matplotlib
 pendulum
 mplfinance
+
+#beautifulsoup4==4.12.3
+#selenium==4.21.0
