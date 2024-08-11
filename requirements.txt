@@ -11,5 +11,5 @@ yfinance
 #beautifulsoup4==4.12.3
 #selenium==4.21.0
 matplotlib
-pendulum=
+pendulum
 mplfinance
