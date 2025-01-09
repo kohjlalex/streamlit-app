@@ -22,15 +22,13 @@ st.title("Ebay Telegram Bot")
 #urls_to_scrape = input('Enter urls separated by commas:')
 
 # Create a text input area where the user can enter multiple URLs separated by commas
-urls_to_scrape = st.text_area(
+urls_input = st.text_area(
     "Enter URLs separated by commas:",
     placeholder="e.g. https://www.ebay.com.sg/itm/204781289466, https://www.ebay.com.sg/itm/387013925413"
 )
 
-urls_to_scrape()
-
 # Process the input if it's not empty
-if urls_to_scrape:
+if urls_input:
     # Split the input string into a list of URLs
     urls_to_scrape = [url.strip() for url in urls_input.split(',')]
     
