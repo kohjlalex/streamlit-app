@@ -27,6 +27,8 @@ urls_to_scrape = st.text_area(
     placeholder="e.g. https://www.ebay.com.sg/itm/204781289466, https://www.ebay.com.sg/itm/387013925413"
 )
 
+urls_to_scrape()
+
 # Process the input if it's not empty
 if urls_to_scrape:
     # Split the input string into a list of URLs
