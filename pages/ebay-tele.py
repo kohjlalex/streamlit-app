@@ -36,7 +36,7 @@ for url in urls_to_scrape:
         print("No match found.")
 
 
-wishlist = [196383109829, 204781289466,387007540962]
+#wishlist = [196383109829, 204781289466,387007540962]
 
 bid_times = []
 
