@@ -33,23 +33,23 @@ if urls_input:
     urls_to_scrape = [url.strip() for url in urls_input.split(',')]
     
     st.write("URLs to scrape:", urls_to_scrape)
+
+    wishlist = []
+    
+    pattern = r'www\.ebay\.com\.sg/itm/(\d+)(?:\?|$)'
+    
+    for url in urls_to_scrape:
+        match = re.search(pattern, url)
+    
+        if match:
+            item_number = match.group(1)
+            wishlist.append(item_number)
+            print(item_number)
+        else:
+            print("No match found.")
+
 else:
-    st.write("Please enter some URLs.")
-
-wishlist = []
-
-pattern = r'www\.ebay\.com\.sg/itm/(\d+)(?:\?|$)'
-
-for url in urls_to_scrape:
-    match = re.search(pattern, url)
-
-    if match:
-        item_number = match.group(1)
-        wishlist.append(item_number)
-        print(item_number)
-    else:
-        print("No match found.")
-
+st.write("Please enter some URLs.")
 
 #wishlist = [196383109829, 204781289466,387007540962]
 
