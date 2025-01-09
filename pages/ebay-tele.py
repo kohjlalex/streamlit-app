@@ -92,8 +92,6 @@ def scrape_ebay(wishlist):
 if urls_input:
     data = scrape_ebay(wishlist)
     st.write(data)
-else:
-    st.write("Please key in urls to proceed")
 
 
 # sgt = timezone('Asia/Singapore')
