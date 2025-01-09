@@ -19,7 +19,22 @@ st.title("Ebay Telegram Bot")
 # "https://www.ebay.com.sg/itm/387013925413?_trkparms=amclksrc%3DITM%26aid%3D777008%26algo%3DPERSONAL.TOPIC%26ao%3D1%26asc%3D20230811123856%26meid%3Ddd9a46f3f73e425d9cfb2e19850a1033%26pid%3D101770%26rk%3D1%26rkt%3D1%26itm%3D387013925413%26pmt%3D0%26noa%3D1%26pg%3D4375194%26algv%3DRecentlyViewedItemsV2&_trksid=p4375194.c101770.m146925&_trkparms=parentrq%3A8b37412d18f0a8cc93df3628ffff9df8%7Cpageci%3A31f83d34-1500-11ef-8eeb-fa40e6d0f5b6%7Ciid%3A1%7Cvlpname%3Avlp_homepage"
 #]
 
-urls_to_scrape = input('Enter urls separated by commas:')
+#urls_to_scrape = input('Enter urls separated by commas:')
+
+# Create a text input area where the user can enter multiple URLs separated by commas
+urls_to_scrape = st.text_area(
+    "Enter URLs separated by commas:",
+    placeholder="e.g. https://www.ebay.com.sg/itm/204781289466, https://www.ebay.com.sg/itm/387013925413"
+)
+
+# Process the input if it's not empty
+if urls_input:
+    # Split the input string into a list of URLs
+    urls_to_scrape = [url.strip() for url in urls_input.split(',')]
+    
+    st.write("URLs to scrape:", urls_to_scrape)
+else:
+    st.write("Please enter some URLs.")
 
 wishlist = []
 
