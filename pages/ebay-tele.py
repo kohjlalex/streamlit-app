@@ -89,7 +89,11 @@ def scrape_ebay(wishlist):
     return(bid_times)
 
 # Example usage:
-data = scrape_ebay(wishlist)
+if urls_input:
+    data = scrape_ebay(wishlist)
+else:
+    st.write("Please key in urls to proceed")
+
 st.write(data)
 # sgt = timezone('Asia/Singapore')
 # now_sgt = datetime.now(sgt)
