@@ -80,7 +80,7 @@ def scrape_ebay(wishlist):
                     try:
                         #print(text[28:-2])
                         #date_time = datetime.strptime(text[28:-6], '%B %d, %Y %H:%M:%S')
-                        bid_times.append({"url": url, "date_time": datetime.strptime(text[28:-6], '%B %d, %Y %H:%M:%S')})
+                        bid_times.append({"url": url, "date_time": datetime.strptime(text[27:-6], '%B %d, %Y %H:%M:%S')})
                         #return(bid_times)
                     except (SyntaxError, ValueError) as e:
                         print("Error evaluating the string:", e)
@@ -92,7 +92,6 @@ def scrape_ebay(wishlist):
 if urls_input:
     data = scrape_ebay(wishlist)
     st.write(data)
-
 
 # sgt = timezone('Asia/Singapore')
 # now_sgt = datetime.now(sgt)
