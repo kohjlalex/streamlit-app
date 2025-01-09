@@ -73,43 +73,43 @@ def scrape_ebay(wishlist):
     print(bid_times)
     return(bid_times)
 
-    # Example usage:
-    data = scrape_ebay(wishlist)
-    st.write(data)
-    # sgt = timezone('Asia/Singapore')
-    # now_sgt = datetime.now(sgt)
-    # #Define the timezone for Singapore
+# Example usage:
+data = scrape_ebay(wishlist)
+st.write(data)
+# sgt = timezone('Asia/Singapore')
+# now_sgt = datetime.now(sgt)
+# #Define the timezone for Singapore
 
-    # def trigger_tele(data):
-    #   # Search for the pattern in the text
-    #     for dict_item in data:
-    #         # Convert the extracted datetime to Singapore Time (SGT)
+# def trigger_tele(data):
+#   # Search for the pattern in the text
+#     for dict_item in data:
+#         # Convert the extracted datetime to Singapore Time (SGT)
 
-    #         extracted_date_time = sgt.localize(dict_item["date_time"])    #current_time_sgt = now_sgt.strftime(format)
-    #         #extracted_time_sgt = extracted_date_time.strftime(format)
-    #         print("Current time in SGT:", now_sgt)
-    #         print("End time in SGT:", extracted_date_time)
-    #         # Calculate the difference between current date and extracted date
+#         extracted_date_time = sgt.localize(dict_item["date_time"])    #current_time_sgt = now_sgt.strftime(format)
+#         #extracted_time_sgt = extracted_date_time.strftime(format)
+#         print("Current time in SGT:", now_sgt)
+#         print("End time in SGT:", extracted_date_time)
+#         # Calculate the difference between current date and extracted date
 
-    #         difference = extracted_date_time - now_sgt
-    #         days = difference.days
-    #         hours, remainder = divmod(difference.seconds, 3600)
-    #         minutes, seconds = divmod(remainder, 60)
+#         difference = extracted_date_time - now_sgt
+#         days = difference.days
+#         hours, remainder = divmod(difference.seconds, 3600)
+#         minutes, seconds = divmod(remainder, 60)
 
-    #         diff = f'{hours} hours, {minutes} minutes, {seconds} seconds'
+#         diff = f'{hours} hours, {minutes} minutes, {seconds} seconds'
 
-    #         #print("difference",difference)
-    #         print(now_sgt)
-    #         print(extracted_date_time)
+#         #print("difference",difference)
+#         print(now_sgt)
+#         print(extracted_date_time)
 
-    #         # Check if the difference is less than 10 minutes
-    #         if difference < timedelta(minutes=10):
-    #             message = f"Bid for {dict_item['url']} ends in <10 minutes at {extracted_date_time}"
-    #             print(message)
-    #             response = send_telegram_message(message)
+#         # Check if the difference is less than 10 minutes
+#         if difference < timedelta(minutes=10):
+#             message = f"Bid for {dict_item['url']} ends in <10 minutes at {extracted_date_time}"
+#             print(message)
+#             response = send_telegram_message(message)
 
-    #         # Check if the difference is at least 3 days
-    #         elif difference > timedelta(minutes=10):
-    #             message = f"Bid for {dict_item['url']} ends in {diff} at {extracted_date_time}"
-    #             print(message)
-    #             response = send_telegram_message(message)
+#         # Check if the difference is at least 3 days
+#         elif difference > timedelta(minutes=10):
+#             message = f"Bid for {dict_item['url']} ends in {diff} at {extracted_date_time}"
+#             print(message)
+#             response = send_telegram_message(message)
