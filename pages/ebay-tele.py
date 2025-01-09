@@ -28,7 +28,7 @@ urls_to_scrape = st.text_area(
 )
 
 # Process the input if it's not empty
-if urls_input:
+if urls_to_scrape:
     # Split the input string into a list of URLs
     urls_to_scrape = [url.strip() for url in urls_input.split(',')]
     
