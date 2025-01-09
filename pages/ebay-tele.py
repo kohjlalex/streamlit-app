@@ -14,8 +14,7 @@ from pytz import timezone
 # Streamlit app
 st.title("Ebay Telegram Bot")
 
-urls_to_scrape = 
-["https://www.ebay.com.sg/itm/204781289466?_trkparms=amclksrc%3DITM%26aid%3D777008%26algo%3DPERSONAL.TOPIC%26ao%3D1%26asc%3D20230811125216%26meid%3D4d3ed92226d544138a02639cbf8cc0b0%26pid%3D101771%26rk%3D1%26rkt%3D1%26itm%3D204781289466%26pmt%3D0%26noa%3D1%26pg%3D4375194%26algv%3DWatchlistVariantWithMLR%26brand%3DCanon&_trksid=p4375194.c101771.m47999&_trkparms=parentrq%3A8b33e28a18f0a54e317619b1ffff99de%7Cpageci%3Aae59042e-14ff-11ef-97d7-c25dc6d1c00c%7Ciid%3A1%7Cvlpname%3Avlp_homepage",
+urls_to_scrape = ["https://www.ebay.com.sg/itm/204781289466?_trkparms=amclksrc%3DITM%26aid%3D777008%26algo%3DPERSONAL.TOPIC%26ao%3D1%26asc%3D20230811125216%26meid%3D4d3ed92226d544138a02639cbf8cc0b0%26pid%3D101771%26rk%3D1%26rkt%3D1%26itm%3D204781289466%26pmt%3D0%26noa%3D1%26pg%3D4375194%26algv%3DWatchlistVariantWithMLR%26brand%3DCanon&_trksid=p4375194.c101771.m47999&_trkparms=parentrq%3A8b33e28a18f0a54e317619b1ffff99de%7Cpageci%3Aae59042e-14ff-11ef-97d7-c25dc6d1c00c%7Ciid%3A1%7Cvlpname%3Avlp_homepage",
  "https://www.ebay.com.sg/itm/204781289466",
  "https://www.ebay.com.sg/itm/387013925413?_trkparms=amclksrc%3DITM%26aid%3D777008%26algo%3DPERSONAL.TOPIC%26ao%3D1%26asc%3D20230811123856%26meid%3Ddd9a46f3f73e425d9cfb2e19850a1033%26pid%3D101770%26rk%3D1%26rkt%3D1%26itm%3D387013925413%26pmt%3D0%26noa%3D1%26pg%3D4375194%26algv%3DRecentlyViewedItemsV2&_trksid=p4375194.c101770.m146925&_trkparms=parentrq%3A8b37412d18f0a8cc93df3628ffff9df8%7Cpageci%3A31f83d34-1500-11ef-8eeb-fa40e6d0f5b6%7Ciid%3A1%7Cvlpname%3Avlp_homepage"
 ]
